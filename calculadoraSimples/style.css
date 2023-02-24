@@ -45,3 +45,13 @@ input[type="radio"] {
 b {
 	font-size: 30px;
 }
+
+img {
+	margin: auto;
+	display: block;
+	margin-top: 555px;
+}
+
+.rodape {
+	background: darkblue solid;
+}
