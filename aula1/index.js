@@ -449,10 +449,34 @@ console.log(tempPositive)
 
 ------------------------------------------------
 FILTRANDO UMA ARRAY COM O FILTER
-*/
+
 
 const tempLondon = [18, 13, 8, 2]
 
 const tempPositive = tempLondon.filter (value => value >= 0)
 
 console.log(tempPositive)
+
+
+-------------------------------------
+// UTILIZANDO ARGUMENTOS EM FUNÇÕES
+
+function price() {
+    let total = 0
+    for (let value of arguments)
+    total += value
+    return total
+}
+
+console.log(price(10, 20, 40, 50))
+
+-------------------------------
+// CONFIGURANDO PARAMETROS DEFAULT
+
+
+function carFinanciado(preco, juros, years) {
+    return( preco * juros / 100 * years) + juros
+}
+
+console.log(carFinanciado( 40000, 17, 5))
+*/
